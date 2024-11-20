@@ -1,0 +1,77 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "assets/fonts/aventa-black.otf",
+      "sha1": "6488fb770b9bc4f8b540cf8b6fc665a68e3de6c9"
+    },
+    {
+      "path": "assets/fonts/aventa-blackitallic.otf",
+      "sha1": "64e43a927525cb3fab93f39f70a3b8317dbbd89f"
+    },
+    {
+      "path": "assets/fonts/aventa-bold.otf",
+      "sha1": "6b97aada742c519c9d981f1e5c182e2be5a1f92d"
+    },
+    {
+      "path": "assets/fonts/aventa-bolditallic.otf",
+      "sha1": "b4d829930a949b547bfceba814033bf269b2ca78"
+    },
+    {
+      "path": "assets/fonts/aventa-extrabold.otf",
+      "sha1": "f08042a7636dab0afb343206c877192a24b6ec88"
+    },
+    {
+      "path": "assets/fonts/aventa-extrabolditallic.otf",
+      "sha1": "00817b8902083f8ae481b92bf2c0ce169f5fb620"
+    },
+    {
+      "path": "assets/fonts/aventa-extralight.otf",
+      "sha1": "e5f175e7dd763e8f8e0b3cc21b6b5b5abe50ecb6"
+    },
+    {
+      "path": "assets/fonts/aventa-extralightitallic.otf",
+      "sha1": "d3245516b0a0992006bf2210e05e4c9ea3e6c92b"
+    },
+    {
+      "path": "assets/fonts/aventa-itallic.otf",
+      "sha1": "8229fd5097cdd61cfebb2948d28550d9c11b7f68"
+    },
+    {
+      "path": "assets/fonts/aventa-light.otf",
+      "sha1": "29881e9949ae9be2a605c28e4e2cbce577c062e6"
+    },
+    {
+      "path": "assets/fonts/aventa-lightitallic.otf",
+      "sha1": "ea0e0c60dc50a1d389ae7253b93659f51e8f0698"
+    },
+    {
+      "path": "assets/fonts/aventa-medium.otf",
+      "sha1": "ff7c2d3ebc1df4f706dedbdf84898465241d8161"
+    },
+    {
+      "path": "assets/fonts/aventa-mediumitallic.otf",
+      "sha1": "e7af1854a1139624391f2c614c3498ffa54f738d"
+    },
+    {
+      "path": "assets/fonts/aventa-regular.otf",
+      "sha1": "c794bd1436e504b70da34bea426dbd6668baa8d9"
+    },
+    {
+      "path": "assets/fonts/aventa-semibold.otf",
+      "sha1": "ab704e264499605660f407639d4c66bfb00d70d3"
+    },
+    {
+      "path": "assets/fonts/aventa-semibolditallic.otf",
+      "sha1": "6833e62e4467a4f5b2f5bb202453fc8d05765d1c"
+    },
+    {
+      "path": "assets/fonts/aventa-thin.otf",
+      "sha1": "577d8dadf849e185d197b4d95397860ceadbf324"
+    },
+    {
+      "path": "assets/fonts/aventa-thinitallic.otf",
+      "sha1": "4cd63a78e891d05bdbe9c73177251f9df079c127"
+    }
+  ]
+}

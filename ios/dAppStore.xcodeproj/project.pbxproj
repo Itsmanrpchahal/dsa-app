@@ -1,0 +1,939 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		047308462B1D9F440064A6A9 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047308452B1D9F440064A6A9 /* NotificationService.swift */; };
+		0473084A2B1D9F440064A6A9 /* OneSignalNotificationServiceExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 047308432B1D9F440064A6A9 /* OneSignalNotificationServiceExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		048E90632B0E3A2C00874C7D /* NewFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048E90622B0E3A2C00874C7D /* NewFile.swift */; };
+		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
+		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
+		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		1F49729AC883405698253849 /* aventa-regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1B472FDAD6A64091A4C9BA5B /* aventa-regular.otf */; };
+		2276567279B141418C4A5CCB /* aventa-itallic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 988E9BDCD3F84ADAB047A0F1 /* aventa-itallic.otf */; };
+		31C693E6855E4545BB6FD263 /* aventa-extrabolditallic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 216D2A0F50504B4F99E526A6 /* aventa-extrabolditallic.otf */; };
+		36EECCCDF228428AAF6696D5 /* aventa-extralight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0FF36E8EF05F488786EBBDA8 /* aventa-extralight.otf */; };
+		3E461D99554A48A4959DE609 /* SplashScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */; };
+		46A0AC22C4AD4018951D2913 /* aventa-semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = EB191A2C6CDB403F8F381D74 /* aventa-semibold.otf */; };
+		5E71A55A99DD434C98D9D8FF /* aventa-bolditallic.otf in Resources */ = {isa = PBXBuildFile; fileRef = E4696AC7995B4DBEB46E2546 /* aventa-bolditallic.otf */; };
+		64A3FD0AECF54CDA9C0751B3 /* aventa-blackitallic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 020B4E6B45B741C1AA9B0E75 /* aventa-blackitallic.otf */; };
+		741F4E652F6F408FBEEBB0AD /* aventa-lightitallic.otf in Resources */ = {isa = PBXBuildFile; fileRef = D59EB0AE98F044FC8FB1BA1A /* aventa-lightitallic.otf */; };
+		77CBA52193BA4ABA3BBE0B5D /* libPods-OneSignalNotificationServiceExtension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A3E450AB87D7CCD2C1DDB67 /* libPods-OneSignalNotificationServiceExtension.a */; };
+		835F7F41AA8641FC85D4D92B /* aventa-mediumitallic.otf in Resources */ = {isa = PBXBuildFile; fileRef = D6FA0179C38A43B9AACE3FDF /* aventa-mediumitallic.otf */; };
+		8C326FF5452C479A80ADF5B0 /* aventa-semibolditallic.otf in Resources */ = {isa = PBXBuildFile; fileRef = C11B635A5EA54A849F78C2CE /* aventa-semibolditallic.otf */; };
+		B18059E884C0ABDD17F3DC3D /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC715A2D49A985799AEE119 /* ExpoModulesProvider.swift */; };
+		BB2F792D24A3F905000567C9 /* Expo.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB2F792C24A3F905000567C9 /* Expo.plist */; };
+		C556552B033548C29705729D /* aventa-bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = BCCE3A303D4E436FB41982E1 /* aventa-bold.otf */; };
+		C85C28E4971D495986C7C5CF /* aventa-thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = B7D8ABB61F8845AE8E794B12 /* aventa-thin.otf */; };
+		CE101F11DEB7371CDA2DEA58 /* libPods-dsacleanup.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 102842799F5E591075D72F15 /* libPods-dsacleanup.a */; };
+		CF32CD0093D446369A631EE8 /* aventa-medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 459E9EBE886E416A9E519D72 /* aventa-medium.otf */; };
+		D716CE7C382341709D8E02E3 /* aventa-light.otf in Resources */ = {isa = PBXBuildFile; fileRef = B00EDB0000A14CFE93DD8412 /* aventa-light.otf */; };
+		DD390361B0B04D0B886C87B6 /* aventa-extrabold.otf in Resources */ = {isa = PBXBuildFile; fileRef = F334652FAC2A4DEE90BC0B7E /* aventa-extrabold.otf */; };
+		E5E1100875A94C479F9514FB /* aventa-extralightitallic.otf in Resources */ = {isa = PBXBuildFile; fileRef = B7AB476B145D4F3293FB9429 /* aventa-extralightitallic.otf */; };
+		EEC8A2766F6D469C883FA943 /* aventa-black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 83F8E0375A124CE0B7FBCFE8 /* aventa-black.otf */; };
+		FA39333F14BB42CA96DE61A6 /* aventa-thinitallic.otf in Resources */ = {isa = PBXBuildFile; fileRef = EFA174E077774FD0B6D35560 /* aventa-thinitallic.otf */; };
+		FBFCA6B92DF7403DB22BBF00 /* noop-file.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553BF6B328954D52B99B65F3 /* noop-file.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		047308482B1D9F440064A6A9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 047308422B1D9F440064A6A9;
+			remoteInfo = OneSignalNotificationServiceExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0473082C2B1D9E6A0064A6A9 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				0473084A2B1D9F440064A6A9 /* OneSignalNotificationServiceExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		020B4E6B45B741C1AA9B0E75 /* aventa-blackitallic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "aventa-blackitallic.otf"; path = "../assets/fonts/aventa-blackitallic.otf"; sourceTree = "<group>"; };
+		047308432B1D9F440064A6A9 /* OneSignalNotificationServiceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = OneSignalNotificationServiceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		047308452B1D9F440064A6A9 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		047308472B1D9F440064A6A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		048E90622B0E3A2C00874C7D /* NewFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewFile.swift; sourceTree = "<group>"; };
+		04F8D30F2B33FCB700C863D1 /* aventa-blackitallic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "aventa-blackitallic.otf"; sourceTree = "<group>"; };
+		04F8D3102B33FCB700C863D1 /* aventa-light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "aventa-light.otf"; sourceTree = "<group>"; };
+		04F8D3112B33FCB700C863D1 /* aventa-extrabold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "aventa-extrabold.otf"; sourceTree = "<group>"; };
+		04F8D3122B33FCB700C863D1 /* aventa-bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "aventa-bold.otf"; sourceTree = "<group>"; };
+		04F8D3132B33FCB700C863D1 /* aventa-black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "aventa-black.otf"; sourceTree = "<group>"; };
+		04F8D3142B33FCB700C863D1 /* aventa-mediumitallic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "aventa-mediumitallic.otf"; sourceTree = "<group>"; };
+		04F8D3152B33FCB700C863D1 /* aventa-thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "aventa-thin.otf"; sourceTree = "<group>"; };
+		04F8D3162B33FCB700C863D1 /* aventa-regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "aventa-regular.otf"; sourceTree = "<group>"; };
+		04F8D3172B33FCB800C863D1 /* aventa-semibolditallic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "aventa-semibolditallic.otf"; sourceTree = "<group>"; };
+		04F8D3182B33FCB800C863D1 /* aventa-medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "aventa-medium.otf"; sourceTree = "<group>"; };
+		04F8D3192B33FCB800C863D1 /* aventa-thinitallic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "aventa-thinitallic.otf"; sourceTree = "<group>"; };
+		04F8D31A2B33FCB800C863D1 /* aventa-semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "aventa-semibold.otf"; sourceTree = "<group>"; };
+		04F8D31B2B33FCB800C863D1 /* aventa-extralightitallic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "aventa-extralightitallic.otf"; sourceTree = "<group>"; };
+		04F8D31C2B33FCB800C863D1 /* aventa-extralight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "aventa-extralight.otf"; sourceTree = "<group>"; };
+		04F8D31D2B33FCB800C863D1 /* aventa-bolditallic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "aventa-bolditallic.otf"; sourceTree = "<group>"; };
+		04F8D31E2B33FCB800C863D1 /* aventa-lightitallic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "aventa-lightitallic.otf"; sourceTree = "<group>"; };
+		04F8D31F2B33FCB800C863D1 /* aventa-extrabolditallic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "aventa-extrabolditallic.otf"; sourceTree = "<group>"; };
+		04F8D3202B33FCB800C863D1 /* aventa-itallic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "aventa-itallic.otf"; sourceTree = "<group>"; };
+		0FF36E8EF05F488786EBBDA8 /* aventa-extralight.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "aventa-extralight.otf"; path = "../assets/fonts/aventa-extralight.otf"; sourceTree = "<group>"; };
+		102842799F5E591075D72F15 /* libPods-dsacleanup.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-dsacleanup.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		10BD4948FABB4D53B5FCF542 /* dsacleanup-Bridging-Header.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = "dsacleanup-Bridging-Header.h"; path = "dsacleanup/dsacleanup-Bridging-Header.h"; sourceTree = "<group>"; };
+		13B07F961A680F5B00A75B9A /* dAppStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dAppStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = dsacleanup/AppDelegate.h; sourceTree = "<group>"; };
+		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = dsacleanup/AppDelegate.mm; sourceTree = "<group>"; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = dsacleanup/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = dsacleanup/Info.plist; sourceTree = "<group>"; };
+		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = dsacleanup/main.m; sourceTree = "<group>"; };
+		1B472FDAD6A64091A4C9BA5B /* aventa-regular.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "aventa-regular.otf"; path = "../assets/fonts/aventa-regular.otf"; sourceTree = "<group>"; };
+		1DDCBB50AEBE662CE5E5A411 /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneSignalNotificationServiceExtension.debug.xcconfig"; path = "Target Support Files/Pods-OneSignalNotificationServiceExtension/Pods-OneSignalNotificationServiceExtension.debug.xcconfig"; sourceTree = "<group>"; };
+		216D2A0F50504B4F99E526A6 /* aventa-extrabolditallic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "aventa-extrabolditallic.otf"; path = "../assets/fonts/aventa-extrabolditallic.otf"; sourceTree = "<group>"; };
+		2A3E450AB87D7CCD2C1DDB67 /* libPods-OneSignalNotificationServiceExtension.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OneSignalNotificationServiceExtension.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		379431A617E5DAFFF486D623 /* Pods-dsacleanup.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dsacleanup.release.xcconfig"; path = "Target Support Files/Pods-dsacleanup/Pods-dsacleanup.release.xcconfig"; sourceTree = "<group>"; };
+		459E9EBE886E416A9E519D72 /* aventa-medium.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "aventa-medium.otf"; path = "../assets/fonts/aventa-medium.otf"; sourceTree = "<group>"; };
+		553BF6B328954D52B99B65F3 /* noop-file.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = "noop-file.swift"; path = "dsacleanup/noop-file.swift"; sourceTree = "<group>"; };
+		75D3BAA6E9AEFE37704B191E /* Pods-dsacleanup.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dsacleanup.debug.xcconfig"; path = "Target Support Files/Pods-dsacleanup/Pods-dsacleanup.debug.xcconfig"; sourceTree = "<group>"; };
+		8227116B0BA6364B7BF3E154 /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneSignalNotificationServiceExtension.release.xcconfig"; path = "Target Support Files/Pods-OneSignalNotificationServiceExtension/Pods-OneSignalNotificationServiceExtension.release.xcconfig"; sourceTree = "<group>"; };
+		83F8E0375A124CE0B7FBCFE8 /* aventa-black.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "aventa-black.otf"; path = "../assets/fonts/aventa-black.otf"; sourceTree = "<group>"; };
+		988E9BDCD3F84ADAB047A0F1 /* aventa-itallic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "aventa-itallic.otf"; path = "../assets/fonts/aventa-itallic.otf"; sourceTree = "<group>"; };
+		AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = SplashScreen.storyboard; path = dsacleanup/SplashScreen.storyboard; sourceTree = "<group>"; };
+		B00EDB0000A14CFE93DD8412 /* aventa-light.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "aventa-light.otf"; path = "../assets/fonts/aventa-light.otf"; sourceTree = "<group>"; };
+		B7AB476B145D4F3293FB9429 /* aventa-extralightitallic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "aventa-extralightitallic.otf"; path = "../assets/fonts/aventa-extralightitallic.otf"; sourceTree = "<group>"; };
+		B7D8ABB61F8845AE8E794B12 /* aventa-thin.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "aventa-thin.otf"; path = "../assets/fonts/aventa-thin.otf"; sourceTree = "<group>"; };
+		BB2F792C24A3F905000567C9 /* Expo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Expo.plist; sourceTree = "<group>"; };
+		BCCE3A303D4E436FB41982E1 /* aventa-bold.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "aventa-bold.otf"; path = "../assets/fonts/aventa-bold.otf"; sourceTree = "<group>"; };
+		C11B635A5EA54A849F78C2CE /* aventa-semibolditallic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "aventa-semibolditallic.otf"; path = "../assets/fonts/aventa-semibolditallic.otf"; sourceTree = "<group>"; };
+		D59EB0AE98F044FC8FB1BA1A /* aventa-lightitallic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "aventa-lightitallic.otf"; path = "../assets/fonts/aventa-lightitallic.otf"; sourceTree = "<group>"; };
+		D6FA0179C38A43B9AACE3FDF /* aventa-mediumitallic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "aventa-mediumitallic.otf"; path = "../assets/fonts/aventa-mediumitallic.otf"; sourceTree = "<group>"; };
+		E4696AC7995B4DBEB46E2546 /* aventa-bolditallic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "aventa-bolditallic.otf"; path = "../assets/fonts/aventa-bolditallic.otf"; sourceTree = "<group>"; };
+		EB191A2C6CDB403F8F381D74 /* aventa-semibold.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "aventa-semibold.otf"; path = "../assets/fonts/aventa-semibold.otf"; sourceTree = "<group>"; };
+		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		EFA174E077774FD0B6D35560 /* aventa-thinitallic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "aventa-thinitallic.otf"; path = "../assets/fonts/aventa-thinitallic.otf"; sourceTree = "<group>"; };
+		F334652FAC2A4DEE90BC0B7E /* aventa-extrabold.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "aventa-extrabold.otf"; path = "../assets/fonts/aventa-extrabold.otf"; sourceTree = "<group>"; };
+		FAC715A2D49A985799AEE119 /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-dsacleanup/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		047308402B1D9F440064A6A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77CBA52193BA4ABA3BBE0B5D /* libPods-OneSignalNotificationServiceExtension.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13B07F8C1A680F5B00A75B9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE101F11DEB7371CDA2DEA58 /* libPods-dsacleanup.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		047308442B1D9F440064A6A9 /* OneSignalNotificationServiceExtension */ = {
+			isa = PBXGroup;
+			children = (
+				047308452B1D9F440064A6A9 /* NotificationService.swift */,
+				047308472B1D9F440064A6A9 /* Info.plist */,
+			);
+			path = OneSignalNotificationServiceExtension;
+			sourceTree = "<group>";
+		};
+		04F8D2EA2B33FC7300C863D1 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				04F8D3132B33FCB700C863D1 /* aventa-black.otf */,
+				04F8D30F2B33FCB700C863D1 /* aventa-blackitallic.otf */,
+				04F8D3122B33FCB700C863D1 /* aventa-bold.otf */,
+				04F8D31D2B33FCB800C863D1 /* aventa-bolditallic.otf */,
+				04F8D3112B33FCB700C863D1 /* aventa-extrabold.otf */,
+				04F8D31F2B33FCB800C863D1 /* aventa-extrabolditallic.otf */,
+				04F8D31C2B33FCB800C863D1 /* aventa-extralight.otf */,
+				04F8D31B2B33FCB800C863D1 /* aventa-extralightitallic.otf */,
+				04F8D3202B33FCB800C863D1 /* aventa-itallic.otf */,
+				04F8D3102B33FCB700C863D1 /* aventa-light.otf */,
+				04F8D31E2B33FCB800C863D1 /* aventa-lightitallic.otf */,
+				04F8D3182B33FCB800C863D1 /* aventa-medium.otf */,
+				04F8D3142B33FCB700C863D1 /* aventa-mediumitallic.otf */,
+				04F8D3162B33FCB700C863D1 /* aventa-regular.otf */,
+				04F8D31A2B33FCB800C863D1 /* aventa-semibold.otf */,
+				04F8D3172B33FCB800C863D1 /* aventa-semibolditallic.otf */,
+				04F8D3152B33FCB700C863D1 /* aventa-thin.otf */,
+				04F8D3192B33FCB800C863D1 /* aventa-thinitallic.otf */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
+		13B07FAE1A68108700A75B9A /* dAppStore */ = {
+			isa = PBXGroup;
+			children = (
+				04F8D2EA2B33FC7300C863D1 /* fonts */,
+				BB2F792B24A3F905000567C9 /* Supporting */,
+				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
+				13B07FB01A68108700A75B9A /* AppDelegate.mm */,
+				13B07FB51A68108700A75B9A /* Images.xcassets */,
+				13B07FB61A68108700A75B9A /* Info.plist */,
+				13B07FB71A68108700A75B9A /* main.m */,
+				AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */,
+				553BF6B328954D52B99B65F3 /* noop-file.swift */,
+				10BD4948FABB4D53B5FCF542 /* dsacleanup-Bridging-Header.h */,
+				048E90622B0E3A2C00874C7D /* NewFile.swift */,
+			);
+			name = dAppStore;
+			sourceTree = "<group>";
+		};
+		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
+				2A3E450AB87D7CCD2C1DDB67 /* libPods-OneSignalNotificationServiceExtension.a */,
+				102842799F5E591075D72F15 /* libPods-dsacleanup.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		46FE8F4EA62442D6922F9E46 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				83F8E0375A124CE0B7FBCFE8 /* aventa-black.otf */,
+				020B4E6B45B741C1AA9B0E75 /* aventa-blackitallic.otf */,
+				BCCE3A303D4E436FB41982E1 /* aventa-bold.otf */,
+				E4696AC7995B4DBEB46E2546 /* aventa-bolditallic.otf */,
+				F334652FAC2A4DEE90BC0B7E /* aventa-extrabold.otf */,
+				216D2A0F50504B4F99E526A6 /* aventa-extrabolditallic.otf */,
+				0FF36E8EF05F488786EBBDA8 /* aventa-extralight.otf */,
+				B7AB476B145D4F3293FB9429 /* aventa-extralightitallic.otf */,
+				988E9BDCD3F84ADAB047A0F1 /* aventa-itallic.otf */,
+				B00EDB0000A14CFE93DD8412 /* aventa-light.otf */,
+				D59EB0AE98F044FC8FB1BA1A /* aventa-lightitallic.otf */,
+				459E9EBE886E416A9E519D72 /* aventa-medium.otf */,
+				D6FA0179C38A43B9AACE3FDF /* aventa-mediumitallic.otf */,
+				1B472FDAD6A64091A4C9BA5B /* aventa-regular.otf */,
+				EB191A2C6CDB403F8F381D74 /* aventa-semibold.otf */,
+				C11B635A5EA54A849F78C2CE /* aventa-semibolditallic.otf */,
+				B7D8ABB61F8845AE8E794B12 /* aventa-thin.otf */,
+				EFA174E077774FD0B6D35560 /* aventa-thinitallic.otf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		83CBB9F61A601CBA00E9B192 = {
+			isa = PBXGroup;
+			children = (
+				13B07FAE1A68108700A75B9A /* dAppStore */,
+				832341AE1AAA6A7D00B99B32 /* Libraries */,
+				047308442B1D9F440064A6A9 /* OneSignalNotificationServiceExtension */,
+				83CBBA001A601CBA00E9B192 /* Products */,
+				2D16E6871FA4F8E400B85C8A /* Frameworks */,
+				D65327D7A22EEC0BE12398D9 /* Pods */,
+				D7E4C46ADA2E9064B798F356 /* ExpoModulesProviders */,
+				46FE8F4EA62442D6922F9E46 /* Resources */,
+			);
+			indentWidth = 2;
+			sourceTree = "<group>";
+			tabWidth = 2;
+			usesTabs = 0;
+		};
+		83CBBA001A601CBA00E9B192 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				13B07F961A680F5B00A75B9A /* dAppStore.app */,
+				047308432B1D9F440064A6A9 /* OneSignalNotificationServiceExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		92DBD88DE9BF7D494EA9DA96 /* dsacleanup */ = {
+			isa = PBXGroup;
+			children = (
+				FAC715A2D49A985799AEE119 /* ExpoModulesProvider.swift */,
+			);
+			name = dsacleanup;
+			sourceTree = "<group>";
+		};
+		BB2F792B24A3F905000567C9 /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				BB2F792C24A3F905000567C9 /* Expo.plist */,
+			);
+			name = Supporting;
+			path = dsacleanup/Supporting;
+			sourceTree = "<group>";
+		};
+		D65327D7A22EEC0BE12398D9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1DDCBB50AEBE662CE5E5A411 /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */,
+				8227116B0BA6364B7BF3E154 /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */,
+				75D3BAA6E9AEFE37704B191E /* Pods-dsacleanup.debug.xcconfig */,
+				379431A617E5DAFFF486D623 /* Pods-dsacleanup.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D7E4C46ADA2E9064B798F356 /* ExpoModulesProviders */ = {
+			isa = PBXGroup;
+			children = (
+				92DBD88DE9BF7D494EA9DA96 /* dsacleanup */,
+			);
+			name = ExpoModulesProviders;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		047308422B1D9F440064A6A9 /* OneSignalNotificationServiceExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0473084B2B1D9F440064A6A9 /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */;
+			buildPhases = (
+				B32161EB4825796E3F226F1F /* [CP] Check Pods Manifest.lock */,
+				0473083F2B1D9F440064A6A9 /* Sources */,
+				047308402B1D9F440064A6A9 /* Frameworks */,
+				047308412B1D9F440064A6A9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OneSignalNotificationServiceExtension;
+			productName = OneSignalNotificationServiceExtension;
+			productReference = 047308432B1D9F440064A6A9 /* OneSignalNotificationServiceExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		13B07F861A680F5B00A75B9A /* dsacleanup */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "dsacleanup" */;
+			buildPhases = (
+				A9A0079272CFD8B67FF995B9 /* [CP] Check Pods Manifest.lock */,
+				FD10A7F022414F080027D42C /* Start Packager */,
+				3B585CAC7E5193071F12099E /* [Expo] Configure project */,
+				13B07F871A680F5B00A75B9A /* Sources */,
+				13B07F8C1A680F5B00A75B9A /* Frameworks */,
+				13B07F8E1A680F5B00A75B9A /* Resources */,
+				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
+				0473082C2B1D9E6A0064A6A9 /* Embed Foundation Extensions */,
+				01ADBCC4645528640B8F2046 /* [CP] Embed Pods Frameworks */,
+				5F5085F57840F9EDAC1E8FE8 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				047308492B1D9F440064A6A9 /* PBXTargetDependency */,
+			);
+			name = dsacleanup;
+			productName = dsacleanup;
+			productReference = 13B07F961A680F5B00A75B9A /* dAppStore.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		83CBB9F71A601CBA00E9B192 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					047308422B1D9F440064A6A9 = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+					13B07F861A680F5B00A75B9A = {
+						LastSwiftMigration = 1250;
+					};
+				};
+			};
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "dAppStore" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 83CBB9F61A601CBA00E9B192;
+			productRefGroup = 83CBBA001A601CBA00E9B192 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				13B07F861A680F5B00A75B9A /* dsacleanup */,
+				047308422B1D9F440064A6A9 /* OneSignalNotificationServiceExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		047308412B1D9F440064A6A9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13B07F8E1A680F5B00A75B9A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB2F792D24A3F905000567C9 /* Expo.plist in Resources */,
+				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				3E461D99554A48A4959DE609 /* SplashScreen.storyboard in Resources */,
+				EEC8A2766F6D469C883FA943 /* aventa-black.otf in Resources */,
+				64A3FD0AECF54CDA9C0751B3 /* aventa-blackitallic.otf in Resources */,
+				C556552B033548C29705729D /* aventa-bold.otf in Resources */,
+				5E71A55A99DD434C98D9D8FF /* aventa-bolditallic.otf in Resources */,
+				DD390361B0B04D0B886C87B6 /* aventa-extrabold.otf in Resources */,
+				31C693E6855E4545BB6FD263 /* aventa-extrabolditallic.otf in Resources */,
+				36EECCCDF228428AAF6696D5 /* aventa-extralight.otf in Resources */,
+				E5E1100875A94C479F9514FB /* aventa-extralightitallic.otf in Resources */,
+				2276567279B141418C4A5CCB /* aventa-itallic.otf in Resources */,
+				D716CE7C382341709D8E02E3 /* aventa-light.otf in Resources */,
+				741F4E652F6F408FBEEBB0AD /* aventa-lightitallic.otf in Resources */,
+				CF32CD0093D446369A631EE8 /* aventa-medium.otf in Resources */,
+				835F7F41AA8641FC85D4D92B /* aventa-mediumitallic.otf in Resources */,
+				1F49729AC883405698253849 /* aventa-regular.otf in Resources */,
+				46A0AC22C4AD4018951D2913 /* aventa-semibold.otf in Resources */,
+				8C326FF5452C479A80ADF5B0 /* aventa-semibolditallic.otf in Resources */,
+				C85C28E4971D495986C7C5CF /* aventa-thin.otf in Resources */,
+				FA39333F14BB42CA96DE61A6 /* aventa-thinitallic.otf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Bundle React Native code and images";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [[ -f \"$PODS_ROOT/../.xcode.env\" ]]; then\n  source \"$PODS_ROOT/../.xcode.env\"\nfi\nif [[ -f \"$PODS_ROOT/../.xcode.env.local\" ]]; then\n  source \"$PODS_ROOT/../.xcode.env.local\"\nfi\n\n# The project root by default is one level up from the ios directory\nexport PROJECT_ROOT=\"$PROJECT_DIR\"/..\n\nif [[ \"$CONFIGURATION\" = *Debug* ]]; then\n  export SKIP_BUNDLING=1\nfi\nif [[ -z \"$ENTRY_FILE\" ]]; then\n  # Set the entry JS file using the bundler's entry resolution.\n  export ENTRY_FILE=\"$(\"$NODE_BINARY\" -e \"require('expo/scripts/resolveAppEntry')\" \"$PROJECT_ROOT\" ios relative | tail -n 1)\"\nfi\n\nif [[ -z \"$CLI_PATH\" ]]; then\n  # Use Expo CLI\n  export CLI_PATH=\"$(\"$NODE_BINARY\" --print \"require.resolve('@expo/cli')\")\"\nfi\nif [[ -z \"$BUNDLE_COMMAND\" ]]; then\n  # Default Expo CLI command for bundling\n  export BUNDLE_COMMAND=\"export:embed\"\nfi\n\n`\"$NODE_BINARY\" --print \"require('path').dirname(require.resolve('react-native/package.json')) + '/scripts/react-native-xcode.sh'\"`\n\n";
+		};
+		01ADBCC4645528640B8F2046 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-dsacleanup/Pods-dsacleanup-frameworks.sh",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/OneSignalXCFramework/OneSignal/OneSignalFramework.framework/OneSignalFramework",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/OneSignalXCFramework/OneSignalCore/OneSignalCore.framework/OneSignalCore",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/OneSignalXCFramework/OneSignalExtension/OneSignalExtension.framework/OneSignalExtension",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/OneSignalXCFramework/OneSignalInAppMessages/OneSignalInAppMessages.framework/OneSignalInAppMessages",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/OneSignalXCFramework/OneSignalLocation/OneSignalLocation.framework/OneSignalLocation",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/OneSignalXCFramework/OneSignalNotifications/OneSignalNotifications.framework/OneSignalNotifications",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/OneSignalXCFramework/OneSignalOSCore/OneSignalOSCore.framework/OneSignalOSCore",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/OneSignalXCFramework/OneSignalOutcomes/OneSignalOutcomes.framework/OneSignalOutcomes",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/OneSignalXCFramework/OneSignalUser/OneSignalUser.framework/OneSignalUser",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/hermes-engine/Pre-built/hermes.framework/hermes",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OneSignalFramework.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OneSignalCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OneSignalExtension.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OneSignalInAppMessages.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OneSignalLocation.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OneSignalNotifications.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OneSignalOSCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OneSignalOutcomes.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OneSignalUser.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/hermes.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-dsacleanup/Pods-dsacleanup-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3B585CAC7E5193071F12099E /* [Expo] Configure project */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[Expo] Configure project";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# This script configures Expo modules and generates the modules provider file.\nbash -l -c \"./Pods/Target\\ Support\\ Files/Pods-dsacleanup/expo-configure-project.sh\"\n";
+		};
+		5F5085F57840F9EDAC1E8FE8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-dsacleanup/Pods-dsacleanup-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/EXConstants/EXConstants.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/EXUpdates/EXUpdates.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core/AccessibilityResources.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/EXConstants.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/EXUpdates.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AccessibilityResources.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-dsacleanup/Pods-dsacleanup-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A9A0079272CFD8B67FF995B9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-dsacleanup-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B32161EB4825796E3F226F1F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OneSignalNotificationServiceExtension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD10A7F022414F080027D42C /* Start Packager */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Start Packager";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [[ -f \"$PODS_ROOT/../.xcode.env\" ]]; then\n  source \"$PODS_ROOT/../.xcode.env\"\nfi\nif [[ -f \"$PODS_ROOT/../.xcode.env.local\" ]]; then\n  source \"$PODS_ROOT/../.xcode.env.local\"\nfi\n\nexport RCT_METRO_PORT=\"${RCT_METRO_PORT:=8081}\"\necho \"export RCT_METRO_PORT=${RCT_METRO_PORT}\" > `$NODE_BINARY --print \"require('path').dirname(require.resolve('react-native/package.json')) + '/scripts/.packager.env'\"`\nif [ -z \"${RCT_NO_LAUNCH_PACKAGER+xxx}\" ] ; then\n  if nc -w 5 -z localhost ${RCT_METRO_PORT} ; then\n    if ! curl -s \"http://localhost:${RCT_METRO_PORT}/status\" | grep -q \"packager-status:running\" ; then\n      echo \"Port ${RCT_METRO_PORT} already in use, packager is either not running or not running correctly\"\n      exit 2\n    fi\n  else\n    open `$NODE_BINARY --print \"require('path').dirname(require.resolve('expo/package.json')) + '/scripts/launchPackager.command'\"` || echo \"Can't start packager automatically\"\n  fi\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0473083F2B1D9F440064A6A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				047308462B1D9F440064A6A9 /* NotificationService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13B07F871A680F5B00A75B9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */,
+				048E90632B0E3A2C00874C7D /* NewFile.swift in Sources */,
+				13B07FC11A68108700A75B9A /* main.m in Sources */,
+				B18059E884C0ABDD17F3DC3D /* ExpoModulesProvider.swift in Sources */,
+				FBFCA6B92DF7403DB22BBF00 /* noop-file.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		047308492B1D9F440064A6A9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 047308422B1D9F440064A6A9 /* OneSignalNotificationServiceExtension */;
+			targetProxy = 047308482B1D9F440064A6A9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0473084C2B1D9F440064A6A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1DDCBB50AEBE662CE5E5A411 /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = "$(inherited)";
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = X29YG8ZW6H;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = OneSignalNotificationServiceExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_DEBUG";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bitpack.dappstorev1staging.OneSignalNotificationServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0473084D2B1D9F440064A6A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8227116B0BA6364B7BF3E154 /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = "$(inherited)";
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = X29YG8ZW6H;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = OneSignalNotificationServiceExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				MTL_FAST_MATH = YES;
+				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_RELEASE";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bitpack.dappstorev1.OneSignalNotificationServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		13B07F941A680F5B00A75B9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75D3BAA6E9AEFE37704B191E /* Pods-dsacleanup.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = "app-icon";
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = dsacleanup/dsacleanup.entitlements;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X29YG8ZW6H;
+				ENABLE_BITCODE = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"FB_SONARKIT_ENABLED=1",
+				);
+				INFOPLIST_FILE = dsacleanup/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = dAppStore;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.9.4;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_DEBUG";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bitpack.dappstorev1staging;
+				PRODUCT_NAME = dAppStore;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "dsacleanup/dsacleanup-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		13B07F951A680F5B00A75B9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 379431A617E5DAFFF486D623 /* Pods-dsacleanup.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = "app-icon";
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = dsacleanup/dsacleanup.entitlements;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X29YG8ZW6H;
+				INFOPLIST_FILE = dsacleanup/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = dAppStore;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.9.4;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_RELEASE -D EXPO_CONFIGURATION_DEBUG";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bitpack.dappstorev1;
+				PRODUCT_NAME = dAppStore;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "dsacleanup/dsacleanup-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		83CBBA201A601CBA00E9B192 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = i386;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					/usr/lib/swift,
+					"$(inherited)",
+				);
+				LIBRARY_SEARCH_PATHS = "$(SDKROOT)/usr/lib/swift\"$(inherited)\"";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_CPLUSPLUSFLAGS = "$(inherited)";
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=*]" = com.bitpack.dappstorev1staging;
+				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		83CBBA211A601CBA00E9B192 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = i386;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					/usr/lib/swift,
+					"$(inherited)",
+				);
+				LIBRARY_SEARCH_PATHS = "$(SDKROOT)/usr/lib/swift\"$(inherited)\"";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_CPLUSPLUSFLAGS = "$(inherited)";
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=*]" = com.bitpack.dappstorev1;
+				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0473084B2B1D9F440064A6A9 /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0473084C2B1D9F440064A6A9 /* Debug */,
+				0473084D2B1D9F440064A6A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "dsacleanup" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13B07F941A680F5B00A75B9A /* Debug */,
+				13B07F951A680F5B00A75B9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "dAppStore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83CBBA201A601CBA00E9B192 /* Debug */,
+				83CBBA211A601CBA00E9B192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 83CBB9F71A601CBA00E9B192 /* Project object */;
+}

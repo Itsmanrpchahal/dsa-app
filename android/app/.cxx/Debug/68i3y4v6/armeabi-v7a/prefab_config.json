@@ -1,0 +1,10 @@
+{
+  "enabled": true,
+  "prefabPath": "/Users/sanjit/.gradle/caches/modules-2/files-2.1/com.google.prefab/cli/2.0.0/f2702b5ca13df54e3ca92f29d6b403fb6285d8df/cli-2.0.0-all.jar",
+  "packages": [
+    "/Users/sanjit/.gradle/caches/transforms-3/3005f7fecd3c9f25b5c6e2213fbc52ef/transformed/jetified-react-android-0.72.3-debug/prefab",
+    "/Users/sanjit/.gradle/caches/transforms-3/8b6cc7607ffe5936bd42bb311e7e5848/transformed/jetified-fbjni-0.3.0/prefab",
+    "/Users/sanjit/.gradle/caches/transforms-3/0d688140c973e9b88bdc09376f98160f/transformed/jetified-hermes-android-0.72.3-debug/prefab",
+    "/Users/sanjit/Desktop/meroku-projects/dsa-cleanup/node_modules/@shopify/react-native-skia/android/build/intermediates/prefab_package/debug/prefab"
+  ]
+}

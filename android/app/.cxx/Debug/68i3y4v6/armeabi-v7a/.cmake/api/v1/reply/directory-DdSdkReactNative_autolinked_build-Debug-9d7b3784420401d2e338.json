@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "DdSdkReactNative_autolinked_build",
+		"source" : "/Users/sanjit/Desktop/meroku-projects/dsa-cleanup/node_modules/@datadog/mobile-react-native/android/build/generated/source/codegen/jni"
+	}
+}

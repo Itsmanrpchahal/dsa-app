@@ -1,0 +1,64 @@
+{
+  "expo": {
+    "name": "dAppStore",
+    "slug": "dsa-cleanup",
+    "version": "1.9.4",
+    "orientation": "portrait",
+    "icon": "./assets/app-icon.jpg",
+    "userInterfaceStyle": "dark",
+    "scheme": "com.bitpack.dappstorev1",
+    "splash": {
+      "image": "./assets/splash-screen-1.jpg",
+      "resizeMode": "contain",
+      "backgroundColor": "#070707"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.bitpack.dappstorev1"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/app-icon.jpg",
+        "backgroundColor": "#070707"
+      },
+      "intentFilters": [
+        {
+          "action": "VIEW",
+          "category": [
+            "BROWSABLE",
+            "DEFAULT"
+          ],
+          "data": {
+            "scheme": "com.bitpack.dappstorev1",
+            "path": "//auth"
+          }
+        }
+      ],
+      "package": "com.bitpack.dappstorev1"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "5c0f1d61-b6f3-4e0b-b68d-eb6c46bc0bfd"
+      }
+    },
+    "owner": "sanjit-bit",
+    "runtimeVersion": "1.9.4",
+    "updates": {
+      "url": "https://u.expo.dev/5c0f1d61-b6f3-4e0b-b68d-eb6c46bc0bfd"
+    },
+    "plugins": [
+      [
+        "expo-updates",
+        {
+          "username": "sanjit-bit"
+        }
+      ]
+    ]
+  }
+}
